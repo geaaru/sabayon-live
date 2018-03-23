@@ -154,6 +154,8 @@ main() {
     sabayon_setup_vbox
     sabayon_setup_vt_autologin
     sabayon_setup_oem_livecd
+    # This fix shutdown issue with sddm
+    systemctl stop getty@tty1
 }
 
 main
